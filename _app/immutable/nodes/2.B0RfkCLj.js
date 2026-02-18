@@ -76,6 +76,7 @@ INSTRUCTIONS:
 CRITICAL CONSISTENCY RULE:
 - The hints MUST describe EXACTLY the correctSentence — nothing more, nothing less.
 - Every concept mentioned in the hints MUST have corresponding words in correctSentence.
+- The "Sujeto" hint MUST match the actual subject of correctSentence. Example of WRONG: Sujeto says "nosotros" but correctSentence is "Flowers do not bloom in winter" (the subject is "las flores", not "nosotros"). Double-check: who performs the action in correctSentence? That is the Sujeto.
 - Example of WRONG: hints say "Complemento: en el gimnasio" but correctSentence is "My sister is going to exercise" (missing "at the gym").
 - Example of CORRECT: hints say "Complemento: en el gimnasio" and correctSentence is "My sister is going to exercise at the gym".
 - There must be exactly one card per word in correctSentence with isDistractor: false.
